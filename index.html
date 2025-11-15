@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sikandar Raja</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: black;
+        color: white;
+        text-align: center;
+    }
+    .container {
+        padding: 10px;
+    }
+    .title {
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .crown {
+        color: gold;
+        font-size: 28px;
+    }
+    .year {
+        font-size: 20px;
+    }
+    .sub-title {
+        font-size: 24px;
+        margin-top: 5px;
+    }
+    .heart {
+        color: red;
+    }
+    .timer {
+        font-size: 20px;
+        color: yellowgreen;
+        margin-top: 5px;
+    }
+    .profile-img {
+        margin-top: 15px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid white;
+    }
+    .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        padding: 12px;
+        font-size: 16px;
+        background-color: #1da1f2;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .btn:hover {
+        background-color: #0d8ddb;
+    }
+    .record-text {
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    .hindi-text {
+        font-size: 20px;
+        color: white;
+        margin-top: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="title">
+        LIVE TOSS™
+    </div>
+    <div class="sub-title">Toss ka Badshah <span class="heart">⚠️</span></div>
+    <div class="timer">Seconds Left <span id="seconds">15</span></div>
+
+    <img src="logo.jpg" alt="Profile" class="profile-img">
+
+    <a href="https://t.me/+5t_QoeaBeTZjNTJl" class="btn">➡ JOIN NOW FOR FREE ⬅</a>
+    <a href="https://t.me/+5t_QoeaBeTZjNTJl" class="btn">➡ SUBSCRIBE TO INDIA'S BEST TIPPER ⬅</a>
+
+    <div class="record-text">⚡Jo Toss dunga woh pass Hoga...⚡</div>
+    <div class="hindi-text">IPL 2025 - 56/62 Toss Pass Record</div>
+</div>
+
+<script>
+    let count = 15;
+    let timer = setInterval(() => {
+        count--;
+        document.getElementById("seconds").innerText = count;
+        if (count <= 0) {
+            clearInterval(timer);
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
